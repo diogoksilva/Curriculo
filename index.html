@@ -1,89 +1,203 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-    <head>
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfólio</title>
-
-    <!--CSS-->
-    <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="./css/header.css">
-    <link rel="stylesheet" href="./css/footer.css">
-    <link rel="stylesheet" href="./css/main.css">
-    <!--Fontes-->
+    <!-- GOOGLE FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300&display=swap" rel="stylesheet">
-
-    <!--Ícones-->
-    <script src="https://kit.fontawesome.com/da4e7bf9ba.js" crossorigin="anonymous" defer></script>
-
-    </head>
-    <body>    
-        <header>
-            <h1>Portfólio/Currículo</h1>
-
-            <nav>
-                <a href="https://linkedin.com/in/diogo-moreira-702469141" target="_blank">
-                    <i class="fa-brands fa-linkedin"></i>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- GOOGLE FONTS -->
+    <!--BOOTSTRAP ICONS-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <!--BOOTSTRAP ICONS-->
+    <link rel="stylesheet" href="style.css">
+    <script src="menu.js" defer></script>
+    <title>Diogo Moreira Projetos Tecnológicos</title>
+</head>
+<body>
+    <header>
+        <div class="interface">
+            <div class="logo">
+                <a href="">
+                    <img src="" alt="Logo Portfólio">
                 </a>
+            </div><!--logo-->
 
-                <a href="https://github.com/diogoksilva" target="_blank">
-                    <i class="fa-brands fa-github"></i>
-                </a>
+            <nav class="menu-desktop">
+                <ul>
+                    <li><a href="#home">Início</a></li>
+                    <li><a href="#programas">Especialidades</a></li>
+                    <li><a href="#eu">Sobre</a></li>
+                    <li><a href="#projetos">Projetos</a></li>
+                    <li><a href="#falacomigo">Fale Comigo</a></li>
+                </ul>
             </nav>
-        </header>
 
-        <main>
-            <section class="main-content">
-                    <article class="text">
-                        <h2>✔Sobre mim</h2>
-                        <p>
-                            Olá, me chamo Diogo, tenho 30 anos e sou natural de Registro, no Estado de São Paulo. 
-                            Atuei durante 6 anos na área de dados, como engenheiro e cientista na Prodesp (Companhia de Processamento de Dados do Estado de São Paulo), em projetos como o SIMI (COVID-19), Bolsa do Povo e CIPTEA (Emissão de carteirinha para pessoas com transtorno do espectro autista).
-                            Focado na área de dados, especialmente na parte de WebScrapping, automação e desenvolvimento de dashboards! 
-                        </p>
+            <div class="btn-contato">
+                <a href="">
+                    <button>Contato</button>
+                </a>
+            </div><!--btn-contato-->
 
-                    </article>
-                    
-                    <aside class="techs">
-                        <h2>Tecnologias</h2>
+            <div class="btn-abrir-menu" id="btn-menu">
+                <i class="bi bi-list"></i>
+            </div>
 
-                        <div class="cards-container">
-                            <div class="card">
-                            <img src="./img/techs/python-logo.png" alt="Logo do Python">
+            <div class="menu-mobile" id="menu-mobile">
+                <div class="btn-fechar">
+                    <i class="bi bi-x-lg"></i>
+                </div><!--btn-fechar-->
+
+                <nav>
+                    <ul>
+                        <li><a href="#home">Início</a></li>
+                        <li><a href="#programas">Especialidades</a></li>
+                        <li><a href="#eu">Sobre</a></li>
+                        <li><a href="#projetos">Projetos</a></li>
+                        <li><a href="#falacomigo">Fale Comigo</a></li>
+                        <li><a href="">Contato</a></li>
+                    </ul>
+                </nav>
+            </div><!--menu-mobile-->
+
+            <div class="overlay-menu"></div><!--overlay-menu-->
+        </div><!--interface-->
+    </header>
+
+    <main>
+        <section class="topo-do-site" id="home">
+            <div class="interface">
+                <div class="flex">
+                    <div class="txt-topo-site">
+
+                        <h1>TRANSFORMANDO IDEIAS EM REALIDADE DIGITAL <span>.</span></h1>
+                        <p> Criatividade e inovação andam lado a lado.
+                            Com uma combinação única de design impactante, funcionalidade intuitiva e otimização para resultados, estou pronto para criar a presença 
+                            online dos seus sonhos.</p>
+
+                        <div class="btn-contato">
+                            <a href="">
+                                <button>Entre em contato</button>
+                            </a>
                         </div>
+                    </div><!--txt topo site-->
 
-                        <div class="card">
-                            <img src="./img/techs/power-bi.png" alt="Logo do PowerBI">
-                        </div>
+                    <div class="img-topo-site">
+                        <img src="./img/diogo.png" alt="Foto Diogo">
+                    </div><!--img topo site-->
+                </div><!--flex-->
+            </div><!--interface-->
+        </section><!--topo do site-->
 
-                        <div class="card">
-                            <img src="./img/techs/html-logo.png" alt="Logo do HTML">
-                        </div>
+        <section class="especialidades" id="programas">
+            <div class="interface">
+                <h2 class="titulo">MINHAS <span>ESPECIALIDADES</span></h2>
+                <div class="flex">
+                    <div class="especialidades-box">
+                        <i class="bi bi-database"></i>
+                        <h3>Banco de Dados</h3>
+                        <p>Foi responsável por criar procedures de ETL e realizar automação dos processos via Azure Data Factory, além de criar consultas otimizadas para desenvolvimento de dashboards via SQL.</p>
+                    </div><!--especialidades-box-->
+                    <div class="especialidades-box">
+                        <i class="bi bi-bar-chart-line"></i>
+                        <h3>Microsoft Power BI</h3>
+                        <p>Responsável pelo desenvolvimento de dashboards para os projetos da COVID-19 do Governo de São Paulo (SIMI) e CIPTEA (Emissão de carteirinha para pessoas com transtorno do espectro autista).</p>
+                    </div><!--especialidades-box-->
+                    <div class="especialidades-box">
+                        <i class="bi bi-filetype-py"></i>
+                        <h3>Python</h3>
+                        <p>Conhecimento de bibliotecas do Python para análise de dados, como o Pandas e automação de processos de Webscrapping e envio de e-mail como Selenium, Pyautogui.</p>
+                    </div><!--especialidades-box-->
+                    <div class="especialidades-box">
+                        <i class="bi bi-file-code"></i>
+                        <h3>Desenvolvimento web</h3>
+                        <p>Linguagem HTML, CSS e Javascript para desenvolvimento de aplicações web</p>
+                    </div><!--especialidades-box-->
+                </div><!--flex-->
+            </div><!--interface-->
 
-                        <div class="card">
-                            <img src="./img/techs/css-logo.png" alt="Logo do CSS3">
-                        </div>
+        </section><!--especialidades-->
 
-                        <div class="card">
-                            <img src="./img/techs/js-logo.png" alt="Logo do JavaScript">
-                        </div>
-                        </div>
-                    </aside>
-            </section>
+        <section class="sobre" id="eu">
+            <div class="interface">
+                <div class="flex">
+                    <div class="img-sobre">
+                        <img src="./img/diogo.png" alt="">
+                    </div><!--img-sobre-->
 
-                <figure>
-                    <img src="./img/techs/diogo.png" alt="Imagem de Diogo">
-                    <figcaption>Diogo Kruszynski Gonçalves Leite Moreira da Silva</figcaption>
-                </figure>
-            </section>
-        </main>
+                    <div class="txt-sobre">
+                        <h2>MUITO PRAZER, <span>SOU DIOGO MOREIRA.</span></h2>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                            Repellat fuga expedita enim asperiores quae, dolore odit dolorum quis incidunt sequi doloribus reiciendis quas labore fugit. 
+                            Accusamus est excepturi assumenda veritatis!</p>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                            Repellat fuga expedita enim asperiores quae, dolore odit dolorum quis incidunt sequi doloribus reiciendis quas labore fugit. 
+                            Accusamus est excepturi assumenda veritatis!</p>
+                            <div class="btn-social">
+                                <a href="https://www.instagram.com/diogokruszynski/"><button><i class="bi bi-instagram"></i></button></a>
+                                <a href="https://www.linkedin.com/in/diogo-moreira-702469141/"><button><i class="bi bi-linkedin"></i></button></a>
+                                <a href="https://github.com/diogobiri"><button><i class="bi bi-github"></i></button></a>
+                            </div><!--btn-social-->
 
-        <footer>
-            <span>
-                &copy; Diogo Kruszynski Gonçalves Leite Moreira da Silva, 2024 - Todos os direitos reservados.
-            </span>
-        </footer>
-    </body>
+                    </div><!--txt-sobre-->
+                </div><!--flex-->
+            </div><!--interface-->
+        </section><!--sobre-->
+
+        <section class="portfolio" id="projetos">
+            <div class="interface">
+                <h2 class="titulo">MEU <span>PORTFÓLIO</span></h2>
+                <div class="flex">
+                    <div class="img-port" style="background-image: url(img/imagem.jpg);">
+                        <div class="overlay">Banco de Dados</div>
+                    </div><!--img-port-->
+                    <div class="img-port" style="background-image: url(img/imagem.jpg);">
+                        <div class="overlay">Power BI</div>
+                    </div><!--img-port-->
+                    <div class="img-port" style="background-image: url(img/imagem.jpg);">
+                        <div class="overlay">Python</div>
+                    </div><!--img-port-->
+                </div><!--flex-->
+            </div><!--interface-->
+        </section><!--portfolio-->
+
+        <section class="formulario" id="falacomigo">
+            <div class="interface">
+                <h2 class="titulo">FALE <span>COMIGO</span></h2>
+
+                <form action="">
+                    <input type="text" name="" id="" placeholder="Seu nome completo:" required>
+                    <input type="text" name="" id="" placeholder="Seu email:" required>
+                    <input type="text" name="" id="" placeholder="Seu celular:">
+                    <textarea name="" id="" placeholder="Sua mensagem" required></textarea>
+                    <div class="btn-enviar"><input type="submit" value="ENVIAR"></div><!--btn-enviar-->
+
+                </form>
+            </div><!--interface-->
+        </section><!--formulario-->
+    </main>
+
+    <footer>
+        <div class="interface">
+            <div class="line-footer">
+                <div class="flex">
+                <div class="logo-footer">
+                    <img src="" alt="Logo">
+                </div><!--logo-footer-->
+                <div class="btn-social">
+                    <a href="https://www.instagram.com/diogokruszynski/"><button><i class="bi bi-instagram"></i></button></a>
+                    <a href="https://www.linkedin.com/in/diogo-moreira-702469141/"><button><i class="bi bi-linkedin"></i></button></a>
+                    <a href="https://github.com/diogobiri"><button><i class="bi bi-github"></i></button></a>
+                </div><!--btn-social-->
+            </div><!--flex-->
+            </div><!--line-footer-->
+
+            <div class="line-footer border">
+                <p><i class="bi bi-envelope"></i> <a href="mailto:diogokglms@hotmail.com">diogokglms@hotmail.com</a></p>
+            </div><!--line-footer-->
+        </div><!--interface-->
+    </footer>
+    
+</body>
 </html>
